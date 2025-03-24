@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCM Extreme Gear - Inclusión y Accesibilidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .accessible-btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .accessible-btn:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1>RCM Extreme Gear</h1>
+        <p>Innovación y Seguridad para el Deporte Extremo</p>
+    </header>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main role="main">
+        <section id="sobre-nosotros" aria-labelledby="sobre-nosotros-heading">
+            <h2 id="sobre-nosotros-heading">Sobre Nosotros</h2>
+            <p>En RCM Extreme Gear nos preocupamos por ofrecer productos de calidad accesibles para todos los deportistas, promoviendo la inclusión en los deportes extremos.</p>
+            <button class="accessible-btn" aria-label="Leer más sobre nosotros">Leer Más</button>
+        </section>
+        <section id="productos" aria-labelledby="productos-heading">
+            <h2 id="productos-heading">Nuestros Productos</h2>
+            <p>Explora nuestra línea de cascos, rodilleras y más, diseñados con la mejor tecnología.</p>
+            <button class="accessible-btn" aria-label="Ver productos">Ver Productos</button>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2025 RCM Extreme Gear - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
